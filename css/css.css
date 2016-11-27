@@ -1,0 +1,190 @@
+
+body{
+    /*background-image: url("pictures/fone1.jpg");*/
+
+    -repeat: no-repeat;
+    margin: 0;
+}
+
+
+.header h3{
+    font-size: 60px;
+    position: absolute;
+    display: inline-block;
+    height: 80px;
+    background: #e90089;
+    background: linear-gradient(to left, #e90089, mistyrose);
+    line-height: 80px;
+    margin-top: 0;
+    margin-left: 80px;
+    margin-bottom: 40px;/*отступ после заголовка*/
+    font-family: "Monotype Corsiva";
+    text-shadow: 1px 1px 1px white;
+}
+/*.se-content h3:before{
+    content: '';
+    width: 0;
+    height: 0;
+
+    border-bottom: 80px solid transparent;
+    border-right: 60px solid #e90089;
+    position: absolute;
+    left: -100px;
+    top: 0px;
+}*/
+.header h3:after{
+    content: '';
+    width: 0;
+    height: 0;
+
+    border-bottom: 80px solid transparent;
+    border-left: 60px solid #e90089;
+    position: absolute;
+    right: -59px;
+    top: 0px;
+}
+
+.block{
+    margin:auto;
+    background-color: black;
+    border: dashed #e90089;
+    width: 1100px;
+    height: 1000px;
+    border-radius: 40px 100px;
+}
+p{
+    color: aliceblue;
+    font-family: 'Bitter', 'Trebuchet MS', Arial;
+    text-shadow: 1px 1px 1px white;
+}
+
+.circle{
+
+    /*fill:#e90089;*/
+    margin: auto;
+    stroke:#e90089;
+    stroke-width:80;
+    stroke-dasharray:1 2;
+}
+.svg{
+    position: absolute;
+    margin: auto;
+    width:900px;
+    height:400px;
+}
+.blinkTitle{
+    font-family: "Monotype Corsiva";
+    font-size: 150px;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+}
+
+#blink {
+    -webkit-animation: blink 2s linear infinite;
+    animation: blink 2s linear infinite;
+}
+
+@-webkit-keyframes blink {
+    0% { color: black; }
+    50% { color: darkgray; }
+    100% { color: black; }
+}
+
+/*.tag {
+    color: navy; /* Цвет текста
+    font-family: "IMG Love";
+    quotes: "~" "~"; /* Устанавливаем вид кавычек
+}
+.tag:before {
+    content: open-quote; /* Добавляем перед текстом открывающую кавычку
+    font-size: 40px;
+}
+.tag:after {
+    content: close-quote; /* Добавляем после текста закрывающую кавычку
+    font-size: 40px;
+}*/
+ul {
+    color: #e90089;
+    list-style: "~" outside; /* Квадратные маркеры */
+    width: 75%;
+    max-width: 500px;
+    margin: 100px auto;
+    margin-left: 400px;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 24px;
+    padding-top: 10px;
+    /* Маркеры размещаются за
+       пределами текстового блока */
+}
+li:first-letter{
+    font-size: 40px;
+    font-family: 'Times New Roman', Georgia, serif;
+}
+
+ul:before{
+    content: url("pictures/rose1.jpg");
+}
+ul:after{
+    content: url("pictures/rose1.jpg");
+}
+
+button.new {
+    margin: 0 auto;
+    background: pink;
+    width: 200px;
+    font-size: 20px;
+    font-family: "Arial Black", Arial, Perpetua, sans-serif;
+    -webkit-border-radius: 5px;
+    border: 3px solid deeppink;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+input.button{
+    margin: 0 auto;
+    background: pink;
+    width: 200px;
+    font-size: 20px;
+    font-family: "Arial Black", Arial, Perpetua, sans-serif;
+    -webkit-border-radius: 5px;
+    border: 3px solid deeppink;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+
+}
+
+input:hover{
+    font-size:23px;
+    background-color: black;
+    color:red;
+}
+
+input:active{
+    color:blue;
+}
+
+.block2{
+    margin-right: 10%;
+    background: radial-gradient(at bottom center,#83ffe9, yellow);
+    width: 300px;
+    height: 1000px;
+    border-radius: 20px;
+
+}
+
+.block2:after{
+    content: "";
+    width: 900px;
+    height: 950px;
+    left: 23%;
+    top: 50px;
+    border-radius: 20px;
+    background: radial-gradient(at bottom center, #83ffe9, yellow);
+    position:absolute;
+
+}
+
+
